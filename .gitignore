@@ -1,0 +1,9 @@
+# Ignore Go bianary and build files
+/bin/
+/build/
+*.exe
+*.out
+*.test
+
+# Ignore generated gRPC files
+*.pb.go
