@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-package ndbc;
-
-option go_package = "github.com/liambardong/grpc-ndbc/proto:proto";
-
-message Empty {};
