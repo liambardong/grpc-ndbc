@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package api.v1;
+
+option go_package = "github.com/liambardong/grpc-ndbc/api/proto/v1;v1";
+
+import "google/protobuf/empty.proto";
+
+service StationService { 
+
+  rpc ListStations(google.protobuf.Empty) returns (ListStationsResponse) {} 
+
+}
+
+message ListStationsResponse { repeated Station stations = 1; }
+
+message Station {
+  string stationId = 1;
+  string owner = 2;
+  string type = 3;
+  string hull = 4;
+  string name = 5;
+  string payload = 6;
+  string timezone = 7;
+  string forecast = 8;
+  string note = 9;
+}

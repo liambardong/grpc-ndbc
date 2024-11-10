@@ -7,3 +7,7 @@
 
 # Ignore generated gRPC files
 *.pb.go
+
+.vscode/
+.idea/
+.DS_Store
