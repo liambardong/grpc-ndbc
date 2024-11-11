@@ -1,0 +1,4 @@
+# STATION_ID | OWNER | TTYPE | HULL | NAME | PAYLOAD | LOCATION | TIMEZONE | FORECAST | NOTE
+#
+0y2w3|CG|Weather Station||Sturgeon Bay CG Station, WI||44.794 N 87.313 W (44&#176;47'39" N 87&#176;18'48" W)|C| |
+13001|PR|Atlas Buoy|PM-595|NE Extension||12.000 N 23.000 W (12&#176;0'0" N 23&#176;0'0" W)|| |

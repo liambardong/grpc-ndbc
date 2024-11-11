@@ -7,6 +7,7 @@ type Station struct {
 	Hull      string
 	Name      string
 	Payload   string
+	Location  string
 	TimeZone  string
 	Forecast  string
 	Note      string
