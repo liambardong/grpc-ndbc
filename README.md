@@ -1,4 +1,4 @@
-# NDBC TXT Data gRPC Service
+# NDBC gRPC Service
 
 A Go-based gRPC service that provides programmatic access to National Data Buoy Center (NDBC) text data files. This service parses and serves structured data from NDBC's text files available at `https://www.ndbc.noaa.gov/data/`.
 
