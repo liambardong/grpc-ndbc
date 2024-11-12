@@ -21,7 +21,9 @@ message Station {
   string hull = 4;
   string name = 5;
   string payload = 6;
-  string timezone = 7;
-  string forecast = 8;
-  string note = 9;
+  double latitude = 7;
+  double longitude = 9;
+  string timezone = 10;
+  string forecast = 11;
+  string note = 12;
 }

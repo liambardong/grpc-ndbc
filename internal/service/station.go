@@ -63,12 +63,14 @@ func (s *StationService) ListStations(ctx context.Context, _ *emptypb.Empty) (*p
 			Hull:      station.Hull,
 			Name:      station.Name,
 			Payload:   station.Payload,
+			Latitude:  station.Latitude,
+			Longitude: station.Longitude,
 			Timezone:  station.TimeZone,
 			Forecast:  station.Forecast,
 			Note:      station.Note,
 		})
 	}
-
+	log.Println(protoStationList)
 	return &pb.ListStationsResponse{
 		Stations: protoStationList,
 	}, nil

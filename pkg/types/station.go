@@ -11,18 +11,20 @@ type Station struct {
 	Hull      string
 	Name      string
 	Payload   string
-	Location  string
+	Latitude  float64
+	Longitude float64
 	TimeZone  string
 	Forecast  string
 	Note      string
 }
 
 func StationToString(s *Station) {
-	log.Printf("Station ID: %s, Owner: %s, Type: %s, Name: %s, Location: %s, Timezone: %s\n",
+	log.Printf("Station ID: %s, Owner: %s, Type: %s, Name: %s, Latitude: %s, Longitude: %s, Timezone: %s\n",
 		s.StationId,
 		s.Owner,
 		s.Type,
 		s.Name,
-		s.Location,
+		s.Latitude,
+		s.Longitude,
 		s.TimeZone)
 }

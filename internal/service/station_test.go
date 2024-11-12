@@ -167,6 +167,8 @@ func TestListStation(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			t.Log("Starting test")
 			response, err := client.ListStations(ctx, &emptypb.Empty{})
+			t.Log("Response: ", response)
+
 			if (err != nil) != tt.wantErr {
 				t.Errorf("ListStations() error = %v, wantErr %v", err, tt.wantErr)
 				return
