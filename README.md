@@ -78,31 +78,22 @@ The service supports the following NDBC text data types:
 
 ### Service Methods
 
-- `GetStandardMetData(StationRequest) returns (MeteorologicalData)`
-- `GetWaveData(StationRequest) returns (WaveData)`
-- `GetHistoricalData(HistoricalRequest) returns (HistoricalData)`
-
-See `proto/ndbc.proto` for detailed message definitions.
+- `StationList() returns (StationListResponse)`
+  
+See `api/proto/v1` for detailed message definitions.
 
 ## Configuration
 
 The service can be configured using environment variables:
 
 ```env
-NDBC_PORT=50051
-NDBC_HOST=0.0.0.0
-NDBC_BASE_URL=https://www.ndbc.noaa.gov/data
-NDBC_CACHE_DURATION=300
+
 ```
 
 ## Docker Support
 
 ```bash
-# Build the image
-docker build -t ndbc-grpc-service .
-
-# Run the container
-docker run -p 50051:50051 ndbc-grpc-service
+To Be Created
 ```
 
 ## Error Handling
